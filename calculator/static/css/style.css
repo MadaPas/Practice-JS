@@ -1,0 +1,28 @@
+#wrapper {
+    width: 240px;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 60px 50px 50px 50px 50px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+input[type="text"] {
+    grid-column: 1/span 4;
+    width: 100%;
+    border: 1px dotted pink;
+}
+
+button {
+    border: 0px;
+    background-color: #F4A90C;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 900;
+    color: white;
+}
