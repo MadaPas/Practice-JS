@@ -3,21 +3,9 @@
   "version": "1.0.0",
   "description": "simple basic calculator implemented using js",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env PORT=80 node app.js",
-    "start-dev": "cross-env PORT=3000 nodemon app.js"
-  },
-  "keywords": [
-    "calculator",
-    "js"
-  ],
   "author": "MadaPas",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.2"
   }
 }
