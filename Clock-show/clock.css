@@ -1,0 +1,14 @@
+#txt{
+	align-items: center;
+	font-size: 600%;
+}
+body{
+	background:linear-gradient(rgb(5, 104, 87), rgb(105, 7, 124));
+	color:white;
+}
+.center{
+	min-height: 100vh;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
