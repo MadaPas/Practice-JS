@@ -65,7 +65,7 @@ function three() {
     a = 0;
 }
 
-function substraction() {
+function subtraction() {
     if (a == 0) {
         a = 1;
         inputField.value += "-";
