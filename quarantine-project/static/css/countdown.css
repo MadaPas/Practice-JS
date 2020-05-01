@@ -1,0 +1,33 @@
+#timer {
+  font-size: 60px;
+  color: #5B265F;
+  margin: 200px 550px 0px 450px;
+  
+}
+
+button[type="button"] {
+  margin-left: 520px;
+}
+
+.button {
+  background-color: #3C2055;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #E3CAD7; 
+  color: black; 
+  border: 2px solid #0E103D;
+}
+
+.button1:hover {
+  background-color: #3C2055;
+  color: white;
+}

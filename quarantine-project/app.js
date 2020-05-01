@@ -27,6 +27,10 @@ app.get("/clock", (req, res) => {
     return res.sendFile(__dirname + "/static/html/clock.html");
 });
 
+app.get("/countdown", (req, res) => {
+    return res.sendFile(__dirname + "/static/html/countdown.html");
+});
+
 app.get("/password-generator", (req, res) => {
     return res.sendFile(__dirname + "/static/html/password_gen.html");
 });

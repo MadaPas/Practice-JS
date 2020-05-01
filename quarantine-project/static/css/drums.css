@@ -6,14 +6,32 @@ body {
 h1 {
   font-size: 5rem;
   color: #E3CAD7;
-  font-family: "Arvo";
+  font-family: "Century Gothic";
+  font-weight: bold;
   text-shadow: 3px 0 #262750;
 }
 
 h2 {
   font-size: 3rem;
   color: #E3CAD7;
-  font-family: "Arvo";
+  font-family: "Century Gothic";
+  font-weight: bold;
+  text-shadow: 3px 0 #262750;
+}
+
+h3 {
+  font-size: 5rem;
+  color: rgb(2, 2, 2);
+  font-family: "Century Gothic";
+  font-weight: bold;
+  text-shadow: 3px 0 #262750;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: rgb(2, 2, 2);
+  font-family: "Century Gothic";
+  font-weight: bold;
   text-shadow: 3px 0 #262750;
 }
 
@@ -23,36 +41,39 @@ footer {
   font-size: 20px;
 }
 
-.q {
-  background-image: url("../images/1.png");
-}
-
 .w {
-  background-image: url("../images/2.png");
+  background-image: url("../images/1.png");
+  background-size: contain;
 }
 
 .a {
-  background-image: url("../images/3.png");
+  background-image: url("../images/2.png");
+  background-size: contain;
 }
 
 .s {
-  background-image: url("../images/4.png");
+  background-image: url("../images/3.png");
+  background-size: contain;
 }
 
-.o {
+.d {
+  background-image: url("../images/4.png");
+  background-size: contain;
+}
+
+.j {
    background-image: url("../images/5.png");
+   background-size: contain;
 }
 
 .k {
  background-image: url("../images/6.png");
+ background-size: contain;
 }
 
 .l {
  background-image: url("../images/7.png");
-}
-
-.set {
-  margin: 4% auto;
+ background-size: contain;
 }
 
 .pressed {
@@ -60,17 +81,18 @@ footer {
   opacity: 0.5;
 }
 
-.drum {
+.square {
   border: 10px solid #404B69;
   font-size: 4rem;
-  font-family: 'Arvo';
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  font-family: 'Century Gothic';
   font-weight: 900;
   color: #0E103D;
   text-shadow: 3px 0 #3C2055;
   border-radius: 15px;
-  width: 150px;
-  height: 150px;
-  margin: 5px;
+
 }
 
 .footer{
@@ -78,4 +100,37 @@ footer {
   height: 30px;
   background: #E3CAD7;
   position: fixed; left: 0; bottom: 0;
+}
+
+
+#change-color {
+  padding: 12px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid;
+}
+
+.button {
+  background-color: #3C2055;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #E3CAD7; 
+  color: black; 
+  border: 2px solid #0E103D;
+}
+
+.button1:hover {
+  background-color: #3C2055;
+  color: white;
 }
