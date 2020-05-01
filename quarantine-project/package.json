@@ -1,0 +1,11 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "simple basic calculator implemented using js",
+  "main": "app.js",
+  "author": "MadaPas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
