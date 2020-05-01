@@ -1,5 +1,5 @@
 
-//===========detecting button press
+//button press
 var numberOfDrumButton = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButton; i++){
@@ -14,10 +14,10 @@ for (var i = 0; i < numberOfDrumButton; i++){
 
 }
 
-//=========detecting keypress===========
+//key press===========
 document.addEventListener("keypress", function (event) {
 
-  //  console.log(event.key); //pressing button,key etc is an event
+  //  console.log(event.key); //pressing button,key ...
   
     makeSound(event.key); //passing key which is pressed
     buttonAnimation(event.key);
@@ -66,12 +66,12 @@ function makeSound(key) {
             console.log(buttonInnerHtml);
     }
 
-} //end makeSound
-
+} 
+//nice animation
 function buttonAnimation(currentKey){
 
     var activeButton = document.querySelector("."+currentKey);
     activeButton.classList.add("pressed");
 
-    setTimeout(function(){ activeButton.classList.remove("pressed")}, 100); 
+    setTimeout(function(){ activeButton.classList.remove("pressed")}, 200); 
 }
