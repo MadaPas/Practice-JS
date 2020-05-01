@@ -35,6 +35,10 @@ app.get("/speed-typing-game", (req, res) => {
     return res.sendFile(__dirname + "/static/html/speed_typing.html");
 });
 
+app.get("/drums", (req, res) => {
+    return res.sendFile(__dirname + "/static/html/drums.html");
+});
+
 
 
 app.listen(PORT, () => {
