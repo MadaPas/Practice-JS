@@ -1,5 +1,0 @@
-create the main page
-give the whole project a nice view
-make it look the same 
-
-revise the 2 calculators 
