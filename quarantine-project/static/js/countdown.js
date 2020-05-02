@@ -1,37 +1,38 @@
 document.getElementById("timer").innerHTML = "00:00:00";
 document.getElementById("time").focus();
+
 function startTimer() {
   console.log("inside");
-  let [hr, min, sec] = document.getElementById("time").value.split(":");
-  let timer = setInterval(function() {
-    sec--;
-    if (sec < 0) {
-      sec = 0;
+  let [h, m, s] = document.getElementById("time").value.split(":");
+  let timer = setInterval(function () {
+    s--;
+    if (s < 0) {
+      s = 0;
     }
-    printer(hr, min, sec);
-    if (hr == 0 && min == 0 && sec == 0) {
-      printer(hr, min, sec);
+    printer(h, m, s);
+    if (h == 0 && m == 0 && s == 0) {
+      printer(h, m, s);
       clearInterval(timer);
     }
-    if (min == 0 && sec == 0) {
-      min = 60;
-      hr--;
+    if (m == 0 && s == 0) {
+      m = 60;
+      h--;
     }
-    if (sec == 0) {
-      sec = 60;
-      min--;
+    if (s == 0) {
+      s = 60;
+      m--;
     }
-    if (min == 0 && hr != 0) {
-      min = 59;
-      hr--;
+    if (m == 0 && h != 0) {
+      m = 59;
+      h--;
     }
   }, 1000);
 }
 
-function printer(hr, min, sec) {
+function printer(h, m, s) {
 
-  sec = sec < 10 ? "0" + sec : sec;
-  min = min < 10 ? "0" + min : min;
-  hr = hr < 10 ? "0" + hr : hr;
-  document.getElementById("timer").innerHTML = hr + ":" + min + ":" + sec;
+  s = s < 10 ? "0" + s : s;
+  m = m < 10 ? "0" + m : m;
+  h = h < 10 ? "0" + h : h;
+  document.getElementById("timer").innerHTML = h + ":" + m + ":" + s;
 }

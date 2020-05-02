@@ -2,7 +2,7 @@
   font-size: 60px;
   color: #5B265F;
   margin: 200px 550px 0px 450px;
-  
+
 }
 
 button[type="button"] {
@@ -22,8 +22,8 @@ button[type="button"] {
 }
 
 .button1 {
-  background-color: #E3CAD7; 
-  color: black; 
+  background-color: #E3CAD7;
+  color: black;
   border: 2px solid #0E103D;
 }
 

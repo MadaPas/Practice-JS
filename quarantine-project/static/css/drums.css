@@ -62,18 +62,18 @@ footer {
 }
 
 .j {
-   background-image: url("../images/5.png");
-   background-size: contain;
+  background-image: url("../images/5.png");
+  background-size: contain;
 }
 
 .k {
- background-image: url("../images/6.png");
- background-size: contain;
+  background-image: url("../images/6.png");
+  background-size: contain;
 }
 
 .l {
- background-image: url("../images/7.png");
- background-size: contain;
+  background-image: url("../images/7.png");
+  background-size: contain;
 }
 
 .pressed {
@@ -95,11 +95,13 @@ footer {
 
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 30px;
   background: #E3CAD7;
-  position: fixed; left: 0; bottom: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 
@@ -125,8 +127,8 @@ footer {
 }
 
 .button1 {
-  background-color: #E3CAD7; 
-  color: black; 
+  background-color: #E3CAD7;
+  color: black;
   border: 2px solid #0E103D;
 }
 

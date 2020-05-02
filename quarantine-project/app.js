@@ -15,12 +15,8 @@ app.get("/", (req, res) => {
     return res.sendFile(__dirname + "/static/html/index.html");
 });
 
-app.get("/calculator-1", (req, res) => {
-    return res.sendFile(__dirname + "/static/html/calculator-1.html");
-});
-
-app.get("/calculator-2", (req, res) => {
-    return res.sendFile(__dirname + "/static/html/calculator-2.html");
+app.get("/calculator", (req, res) => {
+    return res.sendFile(__dirname + "/static/html/calculator.html");
 });
 
 app.get("/clock", (req, res) => {

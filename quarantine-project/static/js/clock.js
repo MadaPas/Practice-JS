@@ -1,15 +1,18 @@
 function startTime() {
   var nowTime = new Date();
-  var hour = nowTime.getHours();
-  var minute = nowTime.getMinutes();
-  var second = nowTime.getSeconds();
-  minute = checkTime(minute);
-  second = checkTime(second);
+  var h = nowTime.getHours();
+  var m = nowTime.getMinutes();
+  var s = nowTime.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
   document.getElementById('txt').innerHTML =
-  hour + ":" + minute + ":" + second;
+    h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) {
+    i = "0" + i
+  }; // add zero in front of numbers < 10
   return i;
 }

@@ -1,11 +1,21 @@
+function popFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Harry Potter (YOU WISH)");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! How are you today? Wanna play some music?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
 
 //key press
-document.addEventListener("keypress",  (event) => {
+document.addEventListener("keypress", (event) => {
 
     //  console.log(event.key); //pressing button,key ...
 
-    makeSound(event.key); //passing key which is pressed
-    buttonAnimation(event.key);
+    sound(event.key); //passing key which is pressed
+    animation(event.key);
 })
 
 //button press
@@ -17,13 +27,13 @@ for (var i = 0; i < numberOfDrumButton; i++) {
 
         var buttonInnerHtml = this.innerHTML;
 
-        makeSound(buttonInnerHtml);
-        buttonAnimation(buttonInnerHtml);
+        sound(buttonInnerHtml);
+        animation(buttonInnerHtml);
     });
 
 }
 
-function makeSound(key) {
+function sound(key) {
 
     switch (key) {
         case 'w':
@@ -67,13 +77,13 @@ function makeSound(key) {
 
 }
 //nice animation
-function buttonAnimation(currentKey) {
+function animation(currentKey) {
 
-    var activeButton = document.querySelector("." + currentKey);
-    activeButton.classList.add("pressed");
+    var button = document.querySelector("." + currentKey);
+    button.classList.add("pressed");
 
     setTimeout(function () {
-        activeButton.classList.remove("pressed")
+        button.classList.remove("pressed")
     }, 200);
 }
 
@@ -94,15 +104,4 @@ function changeColor() {
     if (count >= colors.length) {
         count = 0;
     }
-}
-
-function popFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter (YOU WISH)");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
-  } else {
-    txt = "Hello " + person + "! How are you today? Wanna play some music?";
-  }
-  document.getElementById("demo").innerHTML = txt;
 }

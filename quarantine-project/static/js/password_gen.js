@@ -2,10 +2,10 @@
 const characterAmountRange = document.getElementById('characterAmountRange')
 const characterAmountNumber = document.getElementById('characterAmountNumber')
 const form = document.getElementById('passwordGeneratorForm')
-const includeUppercaseElement = document.getElementById('includeUppercase')
-const includeNumbersElement = document.getElementById('includeNumbers')
-const includeSymbolsElement = document.getElementById('includeSymbols')
-const passwordDisplay = document.getElementById('password-display')
+const uppercaseElement = document.getElementById('includeUppercase')
+const numberElement = document.getElementById('includeNumbers')
+const symbolElement = document.getElementById('includeSymbols')
+const displayPassword = document.getElementById('password-display')
 
 
 //get characters from ascii code
@@ -26,11 +26,11 @@ characterAmountRange.addEventListener('input', syncCharacterAmount)
 form.addEventListener('submit', e => {
     e.preventDefault()
     const characterAmount = characterAmountNumber.value
-    const includeUppercase = includeUppercaseElement.checked
-    const includeNumbers = includeNumbersElement.checked
-    const includeSymbols = includeSymbolsElement.checked
+    const includeUppercase = uppercaseElement.checked
+    const includeNumbers = numberElement.checked
+    const includeSymbols = symbolElement.checked
     const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
-    passwordDisplay.innerText = password
+    displayPassword.innerText = password
 })
 
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {

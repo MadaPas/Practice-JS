@@ -3,3 +3,21 @@ give the whole project a nice view
 make it look the same 
 
 revise the 2 calculators 
+
+
+
+Colors
+    * F2D7EE Pink Lace
+    * E3CAD7 Queen Pink                 ///BIG-TEXTS
+    * D3BCC0 Shadows
+    * BC91A6 English Lavender
+    * D0AEBF Pink Lavender
+    * B17C99 Opera Mauve
+    * AB7192 Pearly Purple
+    * A5668B Antique Fuchsia
+    * 874B7C Berry
+    * 5B265F Palatinate Purple
+    * 69306D Midnight
+    * 3C2055 Russian Violet               ///BACKGROUND
+    * 0E103D Violet
+    * 262750 Space Cadet
